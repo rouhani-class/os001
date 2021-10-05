@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from abelay.github.io/6828seminar/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 10:45:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <title>7330: Operating Systems</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Operating Systems - 7330</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Overview</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link active" href="Syllabus.html">Syllabus<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schedule.html">Schedule</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <i>Fall, 2021</i>
+    </span>
+  </div>
+</nav>
+
+<div class="container-fluid">
+
+<!-- SCHEDULE SECTION -->
+<div class="col-lg-10 my-3 mx-auto">
+
+<h1>Operating Systems: Syllabus</h1>
+<p>You can download a PDF version of this syllabus <a href="os-syllabus.pdf">here</a></p>
+<h2>Prerequisites</h2>
+<p>
+An undergraduate-level understanding of Computer Architecture & Organization, Programming in C, and Assembly. 
+
+<h2>Objectives</h2>
+<p>This course is  primarily designed for undergraduate students. In this course many fundamentals concepts will be covered like: Understanding major components of OSs, Describe various ways of structuring an OS, Describe various features of processes including scheduling , creation , termination , & communication, Understand thread and its issues, Describe various CPU-Scheduling algorithms, Good Understanding of Evaluation Criteria to select a CPU-Scheduling algorithm for a system, Learn concepts of atomic excecution, Learn how to ensure consistency of shared data, Learn how to prevent deadlocks in an OS, Learn various ways of organizing memory, Understanding various memory management techniques, Learn Virtual-Management techniques, Understand functions and interface of file systems, Be able to explain structure of an OS I/O subsystem. The title of topics which will be covered are : 
+<ul>
+  <li>Introduction
+    <ul>
+      <li>
+        What is operating systems?
+      </li>
+      <li>
+        History of operating systems
+      </li>
+      <li>
+        Computer System organization & architecture
+      </li>
+      <li>
+        Operating systems operations
+      </li>
+      <li>
+        Distributed systems (optional)
+      </li>
+    </ul>
+  </li>
+  <li>Operating Systems Structures
+    <ul>
+      <li>
+        OS architecture types
+      </li>
+      <li>
+        OS services
+      </li>
+      <li>
+        System calls
+      </li>
+      <li>
+        Bootstrapping
+      </li>
+      <li>
+        Virtualization
+      </li>
+      <li>
+        OS design & implementation
+      </li>
+      <li>
+        Distributed Operating Systems (optional)
+      </li>
+      <li>
+        Real-time Operating Systems (optional) 
+      </li>
+    </ul>
+  </li>
+  <li>Processes
+    <ul>
+      <li>
+        Process model
+      </li>
+      <li>
+        Process life-cycle
+      </li>
+      <li>
+        Multiprogramming & Multitasking
+      </li>
+      <li>
+        Operations on processes
+      </li>
+      <li>
+        Interprocess Communication techniques
+      </li>
+      <li>
+        Process scheduling
+      </li>
+      <li>
+        Process transition states in Solaris(optional)
+      </li>
+      <li>
+        Distributed Synchronous \& Asynchronous Message-passing algorithms (optional)
+      </li>
+    </ul>
+  </li>
+  <li>Threads
+    <ul>
+      <li>
+        Thread model
+      </li>
+      <li>
+        Multicore programming
+      </li>
+      <li>
+        Posix Threads
+      </li>
+      <li>
+        Threading issues
+      </li>
+      <li>
+        Implementing Threads in user space & the kernel
+      </li>
+      <li>
+        Java Thread (optional)
+      </li>
+    </ul>
+  </li>
+  
+  <li>Synchronization
+    <ul>
+      <li>
+        Thread model
+      </li>
+      <li>
+        Race conditions
+      </li>
+      <li>
+        Critical section
+      </li>
+      <li>
+        Hardware support for synchronization
+      </li>
+      <li>
+        Mutual Exclusion & Busy waiting
+      </li>
+      <li>
+        Sleep & Wakeup
+      </li>
+      <li>
+        Semaphores
+      </li>
+      <li>
+        Mutex & Futex locks
+      </li>
+      <li>
+        Monitors & Barriers
+      </li>
+      <li>
+        Avoiding Locks
+      </li>
+      <li>
+        Alternative Approaches (optional)
+      </li>
+      <li>
+        Recoverable Mutual Exclusion (optional)
+      </li>
+      <li>
+        Verification of Reactive systems (optional)
+      </li>
+      <li>
+        Formalizing Mutual exclusion & Resource Allocation with I/O Automaton (optional) 
+      </li>
+    </ul>
+  </li>
+  
+  <li>Memory Management
+    <ul>
+      <li>
+        Memory abstraction
+      </li>
+      <li>
+        Address spaces
+      </li>
+      <li>
+        Swapping
+      </li>
+      <li>
+        Virtual memory
+      </li>
+      <li>
+        Paging
+      </li>
+      <li>
+        Structure of the page tables 
+      </li>
+      <li>
+        Demand paging
+      </li>
+      <li>
+        Copy-on-Write
+      </li>
+      <li>
+        Page replacement algorithms
+      </li>
+      <li>
+        Design & Implementation issues for paging systems
+      </li>
+      <li>
+        Segmentation
+      </li>
+      <li>
+        Application-Integrated Far Memory (optional)
+      </li>
+    </ul>
+  </li>
+  
+  <li>Deadlock
+    <ul>
+      <li>
+        Resources
+      </li>
+      <li>
+        System model
+      </li>
+      <li>
+        Deadlock modeling
+      </li>
+      <li>
+        Deadlock in multithreaded applications
+      </li>
+      <li>
+        Deadlocks handeling methods
+      </li>
+      <li>
+        Deadlock Prevention
+      </li>
+      <li>
+        Deadlock Detection
+      </li>
+      <li>
+        Deadlock Avoidance
+      </li>
+      <li>
+        Recovery from deadlock
+      </li>
+      <li>
+        Model checking of reactive systems for deadlock-freedom property (optional)
+      </li>
+    </ul>
+  </li>
+  
+  <li>File Systems
+    <ul>
+      <li>
+        File Concepts
+      </li>
+      <li>
+        Access Methods
+      </li>
+      <li>
+        Directory structures
+      </li>
+      <li>
+        File system structures
+      </li>
+      <li>
+        File system operations
+      </li>
+      <li>
+        File system mounting
+      </li>
+      <li>
+        File system implementation
+      </li>
+      <li>
+        Distributed File Systems (optional)
+      </li>
+    </ul>
+  </li>
+  
+  <li>Storage & I/O Management
+    <ul>
+      <li>
+        I/O devices
+      </li>
+      <li>
+        Device controllers
+      </li>
+      <li>
+        Memory-Mapped I/O
+      </li>
+      <li>
+        Direct memory access
+      </li>
+      <li>
+        Programmed I/O
+      </li>
+      <li>
+        Interrupt Handlers
+      </li>
+      <li>
+        Disk Hardware
+      </li>
+      <li>
+        Disk Formatting
+      </li>
+      <li>
+        Disk Arm Scheduling Algorithms
+      </li>
+      <li>
+        Parallel I/O operations (optional)
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Main References</h2>
+
+<p>Our Lectuers are mainly based-on this book.
+  <ul>
+    <li>
+    	Abraham Silberschatz, Peter Baer Galvin, Greg Gagne, Operating System Concepts, Wiley, 10th ed, 2018.
+    </li>
+      
+    <li>Andrew S. Tanenbaum, Herbert Bos, Modern Operating Systems, Pearson, 4th ed, 2015.</li>
+  
+    <li>William Stallings, Operating Systems Internals and Design Principles, Pearson, 9th ed, 2018.</li>
+  </ul>
+
+<h2>Supplementary References</h2>
+<p>We also use these references for complementary discussion.
+  <ul>
+  
+  <li>Thomas Anderson, Michael Dahlin, Operating Systems Principles & Practice, Recursive Books, 2nd ed, 2015.</li>
+  
+  <li>Remzi H. Arpaci-Dusseau, Andrea C. Arpaci-Dusseau, Operating Systems: Three Easy Pieces, CreateSpace Independent Publishing Platform, 2018.</li>
+  
+  <li>Maurice Bach, The Design of the Unix Operating System, Prentice-Hall, 1986.</li>
+  
+  <li>Richard McDougall, Jim Mauro, Solaris Internals: Solaris 10 & OpenSolaris Kernel, Prentice-Hall, 2nd ed, 2006.</li>
+  
+  <li>Marshall Mckusick, George Neville-Neil, Robert Watson, Design & Implementation of the FreeBSD Operating System, Addison-Wesley, 2nd ed, 2014.</li>
+  
+  <li>Allen B. Downey, The Little Book of Semaphores, Green Tea Press, version 2.2.1, 2016.</li>
+  
+  </ul>
+  
+<h2>Useful Links</h2>
+<p>Courses with Video Lectures.
+  <ul>
+  <li><a href="https://pdos.csail.mit.edu/6.S081/2021/index.html">6.S081: Operating System Engineering, MIT, Fall 2021.</a></li>
+  
+  <li><a href="https://pdos.csail.mit.edu/6.S081/2020/index.html">6.S081: Operating System Engineering, MIT, Fall 2020.</a></li>
+  
+  <li><a href="https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2021/">CS-537: Introduction to Operating Systems, University of Wisconsin, Fall 2021.</a></li>
+  
+  <li><a href="https://pages.cs.wisc.edu/~remzi/Classes/537/Spring2018/">CS-537: Introduction to Operating Systems, University of Wisconsin, Spring 2018.</a></li>
+  
+  <li><a href="http://users.cms.caltech.edu/~donnie/cs124/lectures/">CS124 Operating Systems, California Institute of Technology, Spring 2021.</a></li>
+  
+  <li><a href="https://youtube.com/playlist?list=PL3swII2vlVoVbav6FV98pidq6BsTN4u56">CS124 Operating Systems, California Institute of Technology, Fall 2018.</a></li>
+  
+  <li><a href="http://users.cms.caltech.edu/~donnie/cs124/lectures-wi2017/">CS124 Operating Systems, California Institute of Technology, Spring 2017.</a></li>
+  
+  <li><a href="http://pages.cs.wisc.edu/~gerald/cs354/Spring2019/">CS-354: Introduction to Computer Systems, University of Wisconsin, Spring 2019.</a></li>
+  
+  <li><a href="http://pages.cs.wisc.edu/~gerald/cs354/Spring18/">CS-354: Introduction to Computer Systems, University of Wisconsin, Spring 2018.</a></li>
+  
+  <li><a href="https://pages.cs.wisc.edu/~remzi/Classes/354/Spring2017/">CS-354: Introduction to Computer Systems, University of Wisconsin, Spring 2017.</a></li>
+  
+  <li><a href="http://www.cs.cmu.edu/afs/cs/academic/class/15213-f17/www/">15-213/18-213/15-513: Introduction to Computer Systems (ICS), Carnegie Mellon University, Fall 2017.</a></li>
+  
+  <li><a href="http://lass.cs.umass.edu/~shenoy/courses/377/">COMPSCI 377: Operating Systems, University of Massachusetts Amherst , Fall 2016.</a></li>
+  
+  <li><a href="http://lass.cs.umass.edu/~shenoy/courses/spring20/">COMPSCI 577: Operating Systems Design and Implementation, University of Massachusetts Amherst, Spring 2020.</a></li>
+  
+  </ul>
+
+<p>Courses with lecture notes only.
+  <ul>
+  
+  <li><a href="https://zoo.cs.yale.edu/classes/cs423/index.html">CPSC 423/523: Principles of Operating Systems, Yale University, Spring 2021.</a></li>
+  
+  <li><a href="http://flint.cs.yale.edu/cs422/">CS 422/522: Design and Implementation of Operating Systems, Yale University, Fall 2021.</a></li>
+  
+  <li><a href="http://pages.cs.wisc.edu/~bart/cs537.html">CS 537: Introduction to Operating Systems, University of Wisconsin, Fall 2020.</a></li>
+  
+  <li><a href="http://pages.cs.wisc.edu/~shivaram/cs537-sp20/">CS 537 Intro to Operating Systems, University of Wisconsin, Spring 2020.</a></li>
+  
+  <li><a href="https://courses.cs.washington.edu/courses/cse451/21au/">CSE451: Introduction to Operating Systems, University of Washington, Autumn 2021.</a></li>
+  
+  <li><a href="https://courses.cs.washington.edu/courses/cse451/21wi/">CSE451: Introduction to Operating Systems, University of Washington, Spring 2021.</a></li>
+  
+  <li><a href="https://courses.cs.washington.edu/courses/cse551/19wi/">CSE551: Operating Systems, University of Washington, Spring 2019.</a></li>
+  
+  <li><a href="https://cs162.org/">CS 162: Operating Systems and Systems Programming, UC Berkeley, Spring 2021.</a></li>
+  
+  <li><a href="https://www.scs.stanford.edu/21wi-cs140/">CS140: Operating Systems, Stanford University, Spring 2021.</a></li>
+  
+  <li><a href="https://www.cs.cmu.edu/~410/">15-410, Operating System Design and Implementation, Carnegie Mellon UniversityCarnegie Mellon, Fall 2021.</a></li>
+      
+  <li><a href="https://read.seas.harvard.edu/cs161/2021/">CS 161: Operating Systems, California Institute of Technology, Spring 2021.</a></li>
+  
+  </ul>
+  
+<p>Reasearch Groups in Operating Systems.
+  <ul>
+  
+  <li><a href="https://pdos.csail.mit.edu/">Parallel & Distributed Operating Systems Group, MIT.</a></li>
+  
+  <li><a href="https://unsat.cs.washington.edu/">The UNSAT group, University of Washington.</a></li>
+  
+  <li><a href="https://syslab.cs.washington.edu/">Computer Systems Lab, University of Washington.</a></li>
+  
+  <li><a href="https://research.cs.wisc.edu/adsl/">The ADvanced Systems Laboratory (ADSL), University of Wisconsin.</a></li>
+  
+  <li><a href="https://www.usenix.org/">USENIX, The Advanced Computing Systems Association.</a></li>
+  
+  </ul>
+  
+<p>Books website.
+  <ul>
+  
+  <li><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/">Operating Systems: Three Easy Pieces.</a></li>
+  
+  <li><a href="https://www.os-book.com/OS10/">Operating System Concepts.</a></li>
+  
+  <li><a href="http://ospp.cs.washington.edu/">Operating Systems: Principles and Practice.</a></li>
+  
+  <li><a href="https://greenteapress.com/wp/semaphores/">The Little Book of Semaphores.</a></li>
+  
+  </ul>
+  
+<p>Documentaries to Watch.
+  <ul>
+  
+  <li><a href="https://www.youtube.com/watch?v=XvDZLjaCJuw&feature=youtu.be">UNIX: Making Computers Easier To Use -- AT&T Archives film from 1982, Bell Laboratories.</a></li>
+  
+  <li><a href="https://www.youtube.com/watch?v=tc4ROCJYbm0">AT&T Archives: The UNIX Operating System.</a></li>
+  
+  <li><a href="https://www.youtube.com/watch?v=PcdnamUOeaA&feature=youtu.be">Revolution OS: movie about GNU/Linux history.</a></li>
+  
+  </ul>
+  
+<p>Our passed Semesters Audio Lectures.
+  <ul>
+  
+  <li><a href="https://t.me/os_971">7330 Operating Systems, IAU South Tehran Branch, Fall 2018.</a></li>
+  
+  <li><a href="https://t.me/OS96R">7330 Operating Systems, IAU South Tehran Branch, Spring 2017.</a></li>
+  
+  </ul>        
+  
+</div>
+</div>
+
+</body>
+
+<!-- Mirrored from abelay.github.io/6828seminar/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 10:45:07 GMT -->
+</html>
